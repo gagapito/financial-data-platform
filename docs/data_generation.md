@@ -59,3 +59,23 @@ The generated data serves as the source layer for:
 - Data warehouse ingestion
 - Fraud detection
 - Risk scoring analytics
+
+## Database Creation
+
+Create the warehouse database:
+
+```sql
+CREATE DATABASE fintech_dw;v
+
+The generated CSV files are stored in:
+
+data/raw/
+
+The loading pipeline reads these files and inserts records into warehouse tables using SQLAlchemy.
+
+## Loading Data
+
+Tables are created using:
+
+```bash
+python warehouse/create_tables.py

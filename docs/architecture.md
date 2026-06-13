@@ -5,17 +5,34 @@ This project simulates a real-world fintech data system that processes banking t
 
 ## System Architecture
 
-Data Generator
-    ↓
-Raw CSV Files
-    ↓
-ETL Pipeline
-    ↓
-PostgreSQL Warehouse
-    ↓
-Analytics Layer
-    ↓
-Dashboard
+                 +------------------+
+                 | Data Generator   |
+                 +--------+---------+
+                          |
+                          v
+                 +------------------+
+                 | Raw CSV Files    |
+                 +--------+---------+
+                          |
+                          v
+                 +------------------+
+                 | ETL Pipeline     |
+                 +--------+---------+
+                          |
+                          v
+                 +------------------+
+                 | PostgreSQL DW    |
+                 +--------+---------+
+                          |
+                          v
+                 +------------------+
+                 | Analytics Layer  |
+                 +--------+---------+
+                          |
+                          v
+                 +------------------+
+                 | Dashboard        |
+                 +------------------+
 
 ## Tech Stack
 - Python (data generation + ETL)
