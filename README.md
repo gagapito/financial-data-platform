@@ -14,3 +14,20 @@ See `/docs/architecture.md`
 
 ## Tech Stack
 Python, SQL, PostgreSQL, Pandas
+
+## Current Progress
+
+### Completed
+
+- Repository setup
+- Data warehouse schema design
+- Synthetic fintech data generation
+
+### Generated Data
+
+The project currently generates:
+
+- 5,000 customers
+- 7,000 accounts
+- 200 merchants
+- 100,000 transactions
